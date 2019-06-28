@@ -17,12 +17,9 @@ import org.xml.sax.SAXException;
 
 public class utils {
 	public static Document document;
-	
-public static void main(String[] args) {
-	xmlReading("resources\\data.xml");
-}
-	public static  List<List<String>> xmlReading(String filePath) {
-		 List<List<String>> mydata1 = new ArrayList<>();
+
+	public static  List<List<String>> xmlReading(String filePath) throws ParserConfigurationException, IOException {
+		 List<List<String>> mydata1 = new ArrayList<List<String>>();
 		 List<String> mydata;
 		//Get Document Builder
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -44,7 +41,7 @@ public static void main(String[] args) {
 		NodeList nList = document.getElementsByTagName("user");
 		System.out.println(nList.getLength());
 		for (int temp = 0; temp < nList.getLength(); temp++)
-		{mydata = new ArrayList<>();
+		{mydata = new ArrayList<String>();
 		 Node node = nList.item(temp);
 		 System.out.println("");    //Just a separator
 	
@@ -60,7 +57,7 @@ public static void main(String[] args) {
 		 }	 
 		 mydata1.add(mydata);
 		 } 
-		} catch (SAXException|ParserConfigurationException|IOException e) {
+		} catch (SAXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

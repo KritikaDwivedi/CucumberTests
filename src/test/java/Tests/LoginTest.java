@@ -4,9 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.annotations.Listeners;
+import org.testng.Assert;
 
 import Pages.LoginPage;
 import TestBase.TestBase;
@@ -15,11 +17,9 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 
 
 public class LoginTest extends TestBase { 
-	// private static final File TakesScreenshot = null;
 	LoginPage login;
 	@Given("^I am on Amazon login page$") 
 	public void goToAmazon() { 	
@@ -30,7 +30,7 @@ public class LoginTest extends TestBase {
 	}
 	
 	@When("^I enter Username and Password from file at \"([^\"]*)\"$") 
-	public void enterUserPwd(String path) throws InterruptedException {   
+	public void enterUserPwd(String path) throws InterruptedException, ParserConfigurationException, IOException {   
 		List<List<String>> data=utils.xmlReading(path);
 		System.out.println(data);
 		for(int i=0; i<data.size(); i++) {

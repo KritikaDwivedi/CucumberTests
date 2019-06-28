@@ -26,15 +26,15 @@ public class TestBase {
 	public static void initialize() {
 		String browser=prop.getProperty("browser");
 		if (browser.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\kritika.dwivedi\\Downloads\\Drivers\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Resources\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (browser.equals("firefox")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\kritika.dwivedi\\Downloads\\Drivers\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.gecko.driver", "Resources\\Drivers\\geckodriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (browser.equals("ie")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\kritika.dwivedi\\Downloads\\Drivers\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "Resources\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}}
 
