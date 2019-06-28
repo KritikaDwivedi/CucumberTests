@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="51423" started-at="2019-06-27T09:54:21Z" finished-at="2019-06-27T09:55:13Z">
+  <suite name="Suite" duration-ms="64068" started-at="2019-06-28T07:03:25Z" finished-at="2019-06-28T07:04:29Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.runTest@5dfcfece]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.runTest@6a024a67]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="51423" started-at="2019-06-27T09:54:21Z" finished-at="2019-06-27T09:55:13Z">
+    <test name="Test" duration-ms="64068" started-at="2019-06-28T07:03:25Z" finished-at="2019-06-28T07:04:29Z">
       <class name="RunnerClass.runTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunnerClass.runTest@5dfcfece]" name="setUpClass" is-config="true" duration-ms="331" started-at="2019-06-27T15:24:21Z" finished-at="2019-06-27T15:24:21Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:RunnerClass.runTest@6a024a67]" name="setUpClass" is-config="true" duration-ms="337" started-at="2019-06-28T12:33:25Z" finished-at="2019-06-28T12:33:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.runTest@5dfcfece]" name="feature" duration-ms="50879" started-at="2019-06-27T15:24:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-27T15:25:12Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:RunnerClass.runTest@6a024a67]" name="feature" duration-ms="62465" started-at="2019-06-28T12:33:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-06-28T12:34:27Z">
           <params>
             <param index="0">
               <value>
@@ -51,10 +51,9 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
 	at org.testng.TestNG.run(TestNG.java:1024)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:132)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:224)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:113)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
@@ -69,11 +68,11 @@ Caused by: junit.framework.ComparisonFailure: expected:<[abc]> but was:<[def]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunnerClass.runTest@5dfcfece]" name="tearDownClass" is-config="true" duration-ms="49" started-at="2019-06-27T15:25:12Z" finished-at="2019-06-27T15:25:13Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:RunnerClass.runTest@6a024a67]" name="tearDownClass" is-config="true" duration-ms="39" started-at="2019-06-28T12:34:29Z" finished-at="2019-06-28T12:34:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- RunnerClass.runTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

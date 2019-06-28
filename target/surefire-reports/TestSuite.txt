@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.409 sec <<< FAILURE! - in TestSuite
-feature(RunnerClass.runTest)  Time elapsed: 50.902 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.331 sec <<< FAILURE! - in TestSuite
+feature(RunnerClass.runTest)  Time elapsed: 62.484 sec  <<< FAILURE!
 cucumber.runtime.CucumberException: junit.framework.ComparisonFailure: expected:<[abc]> but was:<[def]>
 Caused by: junit.framework.ComparisonFailure: expected:<[abc]> but was:<[def]>
 

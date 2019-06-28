@@ -12,7 +12,6 @@ Scenario:
 
 
 #Scenario outline exapmle1 
-@ignore
 Scenario Outline:
    When I enter Username as "<username>" and Password as "<password>"
    Then Login should fail 
@@ -22,7 +21,6 @@ Examples:
 
 
 #Scenario outline example2 
-@ignore
 Scenario Outline:
    When I enter username as "<username>"
    And I enter password as "<password>" 

@@ -28,7 +28,7 @@ formatter.match({
   "location": "LoginTest.goToAmazon()"
 });
 formatter.result({
-  "duration": 12695232297,
+  "duration": 11188431441,
   "status": "passed"
 });
 formatter.scenario({
@@ -65,14 +65,14 @@ formatter.match({
   "location": "LoginTest.enterUserPwd(String)"
 });
 formatter.result({
-  "duration": 21382859256,
+  "duration": 21872984692,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.checkFail()"
 });
 formatter.result({
-  "duration": 51970582,
+  "duration": 42811751,
   "error_message": "junit.framework.ComparisonFailure: expected:\u003c[abc]\u003e but was:\u003c[def]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat Tests.LoginTest.checkFail(LoginTest.java:90)\r\n\tat ✽.Then Login should fail(outline.feature:11)\r\n",
   "status": "failed"
 });
@@ -98,7 +98,7 @@ formatter.match({
   "location": "LoginTest.goToAmazon()"
 });
 formatter.result({
-  "duration": 7733806820,
+  "duration": 15142497768,
   "status": "passed"
 });
 formatter.scenario({
@@ -162,21 +162,21 @@ formatter.match({
   "location": "LoginTest.I_enter_username(DataTable)"
 });
 formatter.result({
-  "duration": 6212641370,
+  "duration": 6337869371,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.I_enter_password(DataTable)"
 });
 formatter.result({
-  "duration": 2672709833,
+  "duration": 7803191810,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.checkFail()"
 });
 formatter.result({
-  "duration": 16995847,
+  "duration": 12974512,
   "error_message": "junit.framework.ComparisonFailure: expected:\u003c[abc]\u003e but was:\u003c[def]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat Tests.LoginTest.checkFail(LoginTest.java:90)\r\n\tat ✽.Then Login should fail(outline.feature:45)\r\n",
   "status": "failed"
 });
