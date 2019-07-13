@@ -16,6 +16,7 @@ public class LoginPage extends TestBase{
 
 	@FindBy(xpath="//input[@id='ap_password']")
 	public static WebElement password;
+	
 
 	@FindBy(id="signInSubmit")
 	public static WebElement submitButton;
