@@ -4,40 +4,40 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import TestBase.TestBase;
+import Base.TestBase;
 
 public class LoginPage extends TestBase{	
 
 	@FindBy(xpath="//*[text()='Hello, Sign in']")
-	public static WebElement signInLink;
+	public WebElement signInLink;
 
 	@FindBy(xpath="//*[contains(text(),'Email')]/following-sibling::input")
-	public static WebElement userName;
+	public WebElement userName;
 
 	@FindBy(xpath="//input[@id='ap_password']")
-	public static WebElement password;
+	public WebElement password;
 
 	@FindBy(id="signInSubmit")
-	public static WebElement submitButton;
+	public WebElement submitButton;
 
 	public LoginPage(){
 		PageFactory.initElements(driver, this);
 	}
 
-	public static void clickSignInLink() {
+	public void clickSignInLink() {
 		
 		signInLink.click();
 	}
 	
-	public static void enterUserName(String uname) {
+	public void enterUserName(String uname) {
 		userName.sendKeys(uname);
 	}
 	
-	public static void enterpassword(String pwd) {
+	public void enterpassword(String pwd) {
 		password.sendKeys(pwd);
 	}
 	
-	public static void clickSubmit() {
+	public void clickSubmit() {
 		submitButton.click();;
 	}
 

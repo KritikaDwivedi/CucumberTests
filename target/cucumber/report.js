@@ -28,9 +28,8 @@ formatter.match({
   "location": "LoginTest.goToAmazon()"
 });
 formatter.result({
-  "duration": 5050724288,
-  "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d75.0.3770.100)\n  (Driver info: chromedriver\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.2\u0027, revision: \u002710229a9\u0027, time: \u00272017-08-21T17:29:55.15Z\u0027\nSystem info: host: \u0027ICPL12499\u0027, ip: \u002710.11.28.202\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:59618}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1), userDataDir\u003dC:\\Users\\KRITIK~1.DWI\\AppData\\Local\\Temp\\scoped_dir29556_21873}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003dignore, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d75.0.3770.100, browserConnectionEnabled\u003dfalse, proxy\u003dProxy(), nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c08095b6984f128b0af9d567234df5ec\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)\r\n\tat TestBase.TestBase.launchUrl(TestBase.java:43)\r\n\tat Tests.LoginTest.goToAmazon(LoginTest.java:27)\r\n\tat ✽.Given I am on Amazon login page(outline.feature:5)\r\n",
-  "status": "failed"
+  "duration": 11420319035,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -66,13 +65,15 @@ formatter.match({
   "location": "LoginTest.enterUserPwd(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21762956677,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginTest.checkFail()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2290990988,
+  "status": "passed"
 });
 formatter.scenarioOutline({
   "comments": [
@@ -143,4 +144,55 @@ formatter.step({
 });
 formatter.match({
   "location": "LoginTest.goToAmazon()"
+});
+formatter.result({
+  "duration": 8739020281,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "",
+  "description": "",
+  "id": "amazon-login-scenarios;;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 16,
+  "name": "I enter Username as \"Tom\" and Password as \"jerry\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "Login should fail",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Tom",
+      "offset": 21
+    },
+    {
+      "val": "jerry",
+      "offset": 43
+    }
+  ],
+  "location": "LoginTest.enterUsernameAndPassword(String,String)"
+});
+formatter.result({
+  "duration": 6228031281,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginTest.checkFail()"
+});
+formatter.result({
+  "duration": 2262503344,
+  "status": "passed"
+});
 });

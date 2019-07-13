@@ -1,4 +1,4 @@
-package TestBase;
+package Base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -44,4 +44,5 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	}
+
 }

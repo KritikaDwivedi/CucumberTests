@@ -1,6 +1,3 @@
-Utilities\utils.class
 Pages\LoginPage.class
 RunnerClass\runTest.class
-Utilities\TestListener.class
-TestBase\TestBase.class
 Tests\LoginTest.class

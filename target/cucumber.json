@@ -1,0 +1,160 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#This is how background can be used to eliminate duplicate steps"
+          }
+        ],
+        "line": 4,
+        "name": "User navigates to Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11420319035,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Amazon login page",
+            "match": {
+              "location": "LoginTest.goToAmazon()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 8,
+            "value": "#Scenario with xml data"
+          }
+        ],
+        "line": 9,
+        "name": "",
+        "description": "",
+        "id": "amazon-login-scenarios;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21762956677,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter Username and Password from file at \"resources\\\\data.xml\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "resources\\\\data.xml",
+                  "offset": 44
+                }
+              ],
+              "location": "LoginTest.enterUserPwd(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2290990988,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Login should fail",
+            "match": {
+              "location": "LoginTest.checkFail()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#This is how background can be used to eliminate duplicate steps"
+          }
+        ],
+        "line": 4,
+        "name": "User navigates to Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8739020281,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Amazon login page",
+            "match": {
+              "location": "LoginTest.goToAmazon()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": "amazon-login-scenarios;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6228031281,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter Username as \"Tom\" and Password as \"jerry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tom",
+                  "offset": 21
+                },
+                {
+                  "val": "jerry",
+                  "offset": 43
+                }
+              ],
+              "location": "LoginTest.enterUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2262503344,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Login should fail",
+            "match": {
+              "location": "LoginTest.checkFail()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon login scenarios",
+    "description": "",
+    "id": "amazon-login-scenarios",
+    "keyword": "Feature",
+    "uri": "outline.feature"
+  }
+]
